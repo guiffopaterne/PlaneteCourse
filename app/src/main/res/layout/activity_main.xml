@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:id="@+id/table_planete"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:stretchColumns="1">
+        <TableRow tools:ignore="UselessParent">
+            <Button style="?android:attr/buttonBarButtonStyle"
+                android:id="@+id/btn_save"
+                android:text="@string/save"/>
+            <Button style="?android:attr/buttonBarButtonStyle"
+                android:id="@+id/btn_select"
+                android:text="@string/select"/>
+
+            <Button style="?android:attr/buttonBarButtonStyle"
+                android:id="@+id/btn_delete"
+                android:text="@string/delete"
+                />
+        </TableRow>
+    </TableLayout>
+
+
+        <TextView android:layout_width="match_parent"
+            android:textSize="18sp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/table_planete"
+            android:gravity="center"
+            android:text="@string/nos_planete"
+            android:id="@+id/labelPlanete" />
+
+    <TextView
+        android:id="@+id/resultat"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/labelPlanete"
+        android:layout_height="wrap_content"
+
+        />
+</RelativeLayout>
